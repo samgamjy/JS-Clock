@@ -1,0 +1,110 @@
+
+html {
+    background-size: cover;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-size: 10px;
+}
+
+:root {
+    --dark-mode-color : #fff;
+    --light-mode-color : #000;
+}
+
+html.dark {
+    --dark-mode-color : #000;
+    --light-mode-color : #fff;
+}
+
+body {
+    font-size: 2rem;
+    display: flex;
+    flex: 1;
+    min-height: 100vh;
+    align-items: center;
+    color: var(--light-mode-color);
+    background-color: var(--dark-mode-color);
+}
+
+
+.switcher-mode {
+    background-color: var(--light-mode-color);    
+    color: var(--dark-mode-color);
+    border-radius: 50%;
+    top: 20%;
+    position: absolute;
+    left: 80%;
+    width: 20em;
+    height: 5em;
+    box-shadow: 10px 5px 5px var(--dark-mode-color);
+    cursor: pointer;
+}
+
+.clock {
+    background-color: rgba(200, 200, 200, 0.7);
+    width: 30em;
+    height: 30em;
+    border: 20px solid white;
+    border-radius: 50%;
+    margin: 50px auto;
+    position: relative;
+    padding: 2rem;
+    box-shadow: 10px 5px 5px var(--light-mode-color);
+    background-image: url(/JS-Clock/src/images/clock.png);
+    background-size: cover;
+}
+
+.hand {
+    color: var(--dark-mode-color);
+    background-color: var(--light-mode-color);
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.05s;
+    transition-timing-function: ease-out;
+}
+
+.second-hand {
+    height: 3px;
+    background: red;
+    left: 10%;
+    width: 40%;
+}
+
+.minute-hand {
+    height: 6px;
+    left: 10%;
+    width: 40%;
+}
+
+.hour-hand {
+    height: 10px;
+    transform-origin: 100%;
+    width: 30%;
+    left: 20%;
+}
+
+.dateTime {
+    width: 100%;
+    position: absolute;
+    top: 90%;
+    left: 0%;
+    font-size: 6rem;
+    color: var(--light-mode-color);
+    background-color: var(--dark-mode-color);
+}
+
+.lang {
+    position: absolute;
+    font-size: 2rem;
+    left: 90%;
+    top: 10%;
+}
+
+select {
+    font-size: larger;
+}
+
+}
