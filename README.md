@@ -1,1 +1,1 @@
-# JS-Clock
+https://github.com/samgamjy/JS-Clock/blob/js-clock-dev/src/index.html
